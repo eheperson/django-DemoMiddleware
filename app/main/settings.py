@@ -47,6 +47,10 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
+    # This is the custom demo middleware
+    # This line is required to activate the middleware
+    'main.middleware.DemoMiddleware',
 ]
 
 ROOT_URLCONF = 'main.urls'
